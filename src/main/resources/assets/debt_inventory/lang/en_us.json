@@ -1,0 +1,7 @@
+{
+  "commands.debt.add_success": "Debt of player %1$s has been modified to %2$d.",
+  "commands.debt.clear_success": "Debt of player %1$s has been cleared to 0.",
+  "commands.debt.get_death_point_info": "Last death point Info of player %1$s: %2$s",
+  "commands.debt.get_success": "Debt of player %1$s is %2$d.",
+  "commands.debt.set_success": "Debt of player %1$s has been set to %2$d."
+}
