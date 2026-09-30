@@ -19,19 +19,19 @@ public class Config {
 
     private static final ForgeConfigSpec.IntValue DEBT_STACK16 = BUILDER
         .comment("Debt added for each >=16-stack item")
-        .defineInRange("debtStack16", 4, 0, Integer.MAX_VALUE);
+        .defineInRange("debtStack16", 3, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.IntValue DEBT_STACK1 = BUILDER
         .comment("Debt added for each 1-stack item")
-        .defineInRange("debtStack1", 32, 0, Integer.MAX_VALUE);
+        .defineInRange("debtStack1", 24, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.IntValue DEBT_STACK_OTHER = BUILDER
         .comment("Debt added for each other-stack item")
-        .defineInRange("debtStackOther", 10, 0, Integer.MAX_VALUE);
+        .defineInRange("debtStackOther", 8, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.DoubleValue DEDUCTION_DEATH_POINT = BUILDER
         .comment("Debt deducted when the player reaches last death point, in proportion of debt caused by that death")
-        .defineInRange("deductionDeathPoint", 0.65, 0, 1.0);
+        .defineInRange("deductionDeathPoint", 0.75, 0, 1.0);
 
     private static final ForgeConfigSpec.IntValue DEDUCTION_CHEST_LOOT = BUILDER
         .comment("Debt deducted when the player generates chest loot")
@@ -39,11 +39,11 @@ public class Config {
 
     private static final ForgeConfigSpec.IntValue DEDUCTION_ARCHEOLOGY_LOOT = BUILDER
         .comment("Debt deducted when the player generates archeology loot")
-        .defineInRange("deductionArcheologyLoot", 24, 0, Integer.MAX_VALUE);
+        .defineInRange("deductionArcheologyLoot", 32, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.IntValue DEDUCTION_FISH_STACK64 = BUILDER
         .comment("Debt deducted for each >=64-stack item fished up")
-        .defineInRange("deductionFish64", 6, 0, Integer.MAX_VALUE);
+        .defineInRange("deductionFish64", 10, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.IntValue DEDUCTION_FISH_STACK16 = BUILDER
         .comment("Debt deducted for each >=16-stack item fished up")
@@ -51,27 +51,27 @@ public class Config {
 
     private static final ForgeConfigSpec.IntValue DEDUCTION_FISH_STACK1 = BUILDER
         .comment("Debt deducted for each 1-stack item fished up")
-        .defineInRange("deductionFish1", 36, 0, Integer.MAX_VALUE);
+        .defineInRange("deductionFish1", 56, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.IntValue DEDUCTION_FISH_STACK_OTHER = BUILDER
         .comment("Debt deducted for each other-stack item fished up")
-        .defineInRange("deductionFishOther", 24, 0, Integer.MAX_VALUE);
+        .defineInRange("deductionFishOther", 36, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.DoubleValue DEDUCTION_MOB_HEALTH = BUILDER
         .comment("Debt deducted when killing a mob, in proportion to the max health of the mob")
-        .defineInRange("deductionMobHealth", 0.25, 0, 100);
+        .defineInRange("deductionMobHealth", 0.50, 0, 100);
 
     private static final ForgeConfigSpec.IntValue DEDUCTION_MOB_MAX = BUILDER
         .comment("Max debt deducted when killing a mob")
-        .defineInRange("deductionMobMax", 256, 0, Integer.MAX_VALUE);
+        .defineInRange("deductionMobMax", 512, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.IntValue DEDUCTION_PHANTOM = BUILDER
         .comment("Extra debt deducted when killing a phantom")
-        .defineInRange("deductionPhantom", 10, 0, Integer.MAX_VALUE);
+        .defineInRange("deductionPhantom", 16, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.IntValue DEDUCTION_VILLAGER_TRADE = BUILDER
         .comment("Debt deducted when trading with a villager")
-        .defineInRange("deductionVillager", 8, 0, Integer.MAX_VALUE);
+        .defineInRange("deductionVillager", 16, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.DoubleValue DEDUCTION_BUFF_COMPASS = BUILDER
         .comment("Debt deduction buff when holding the recovery compass in proportions")
@@ -91,7 +91,7 @@ public class Config {
 
     private static final ForgeConfigSpec.DoubleValue PUNISH_MOB_EXP = BUILDER
         .comment("The amount of exp reduced by debt punishment: mob exp in proportions")
-        .defineInRange("punishMobExp", 0.25, 0, 1.0);
+        .defineInRange("punishMobExp", 0.10, 0, 1.0);
 
     static final ForgeConfigSpec SPEC = BUILDER.build();
 
