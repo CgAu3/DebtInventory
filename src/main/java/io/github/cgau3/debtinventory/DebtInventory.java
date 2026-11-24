@@ -1,6 +1,7 @@
 package io.github.cgau3.debtinventory;
 
 import com.mojang.logging.LogUtils;
+import io.github.cgau3.debtinventory.content.DebtSheetItem;
 import io.github.cgau3.debtinventory.core.ModPacketHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.Item;
@@ -18,6 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -32,6 +34,11 @@ public class DebtInventory {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     // Create a Deferred Register to hold Items which will all be registered under the "debt_inventory" namespace
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+
+    public static final RegistryObject<DebtSheetItem> DEBT_SHEET = ITEMS.register(
+        "debt_sheet",
+        () -> new DebtSheetItem(new Item.Properties())
+    );
 
     @SuppressWarnings("removal")
     public DebtInventory() {

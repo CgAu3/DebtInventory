@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "debt_inventory:item/debt_sheet"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "commands.debt.add_success": "玩家 %1$s 的债务已修改为 %2$d。",
+  "commands.debt.clear_success": "玩家 %1$s 的债务已清零。",
+  "commands.debt.get_death_point_info": "玩家 %1$s 的上次死亡点信息：%2$s",
+  "commands.debt.get_success": "玩家 %1$s 的债务为 %2$d。",
+  "commands.debt.set_success": "玩家 %1$s 的债务已设定为 %2$d。",
+  "item.debt_inventory.debt_sheet": "债务卷轴",
+  "tooltip.debt_inventory.debt_sheet.info": "当前债务：%1$d",
+  "tooltip.debt_inventory.debt_sheet.keep": "某位存在会替你保管财宝，但这并非无偿；",
+  "tooltip.debt_inventory.debt_sheet.debt": "若你本该失去财宝，便会背上债务。",
+  "tooltip.debt_inventory.debt_sheet.count": "携带那些物品越费力，产生的债务就越高。",
+  "tooltip.debt_inventory.debt_sheet.penalty": "负债状态下，你的幸运、抢夺、理智和经验获取都会降低。",
+  "tooltip.debt_inventory.debt_sheet.payment": "祂不在乎凡人的财富，因此要偿还债务，你需要采取行动：",
+  "tooltip.debt_inventory.debt_sheet.payment2": "捡魂、狩猎、钓鱼、交易、开宝箱、考古、驱除幻翼。",
+  "tooltip.debt_inventory.debt_sheet.payment3": "此外，手持追溯指针会加速你的还债过程。"
+}

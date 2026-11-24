@@ -3,5 +3,14 @@
   "commands.debt.clear_success": "Debt of player %1$s has been cleared to 0.",
   "commands.debt.get_death_point_info": "Last death point Info of player %1$s: %2$s",
   "commands.debt.get_success": "Debt of player %1$s is %2$d.",
-  "commands.debt.set_success": "Debt of player %1$s has been set to %2$d."
+  "commands.debt.set_success": "Debt of player %1$s has been set to %2$d.",
+  "item.debt_inventory.debt_sheet": "Debt Scroll",
+  "tooltip.debt_inventory.debt_sheet.info": "Current Debt: %1$d",
+  "tooltip.debt_inventory.debt_sheet.keep": "Some existence keeps your treasure safe, but not for free.",
+  "tooltip.debt_inventory.debt_sheet.debt": "You would be on a debt if you should've lost your treasure.",
+  "tooltip.debt_inventory.debt_sheet.count": "The harder to carry the items, the more debt generated.",
+  "tooltip.debt_inventory.debt_sheet.penalty": "If on a debt, your luck, loot, sanity and exp gains would be reduced.",
+  "tooltip.debt_inventory.debt_sheet.payment": "They don't care about mortal wealth, so to pay the debt, you need to act:",
+  "tooltip.debt_inventory.debt_sheet.payment2": "Soul recovery, hunting, fishing, trading, looting chests, archaeology, exorcising phantoms.",
+  "tooltip.debt_inventory.debt_sheet.payment3": "Also, holding a recovery compass fosters your pay-off."
 }
